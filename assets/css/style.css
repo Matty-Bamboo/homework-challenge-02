@@ -1,0 +1,50 @@
+/*Universal Selector */
+* {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+
+/* Element Selectors select all of that element type */
+body {
+  background-color: white;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+
+/* Header Elements */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background: #13293d;
+    color: #fff
+}
+
+h1 {
+    font-size: 50px;
+}
+
+/* Navigation Elements */
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    min-width: 300px;
+    
+}
+
+nav ul li {
+    color: #b9c6ae;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+nav ul li:hover {
+    color: whitesmoke
+}
+
