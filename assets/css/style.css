@@ -20,7 +20,7 @@ header {
     align-items: center;
     padding: 1%;
     background: #13293d;
-    color: #fff
+    color: #b9c6ae
 }
 
 h1 {
@@ -28,23 +28,128 @@ h1 {
 }
 
 /* Navigation Elements */
+nav {
+    display: flex;
+}
 
 nav ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    min-width: 300px;
-    
+    min-width: 300px; 
 }
 
-nav ul li {
+nav ul li a {
     color: #b9c6ae;
     font-weight: bold;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 
-nav ul li:hover {
+nav ul li a:hover {
     color: whitesmoke
 }
 
+/* main body section */
+
+section {
+  flex: 1;
+  padding: 20px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+
+.card {
+    flex: 1 0 200px;
+    padding: 10px;
+    text-align: justify 
+    border-style: hidden;
+    border-width: 1px;
+}
+
+.card-project {
+    border-style: none;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 400px;
+    font-size: 10px;
+}
+
+.card-project header {
+    text-align: left;
+}
+
+.card-project img {
+    width: 100%;
+}
+
+#project1 {
+    display: flex;
+    flex-direction: row;
+    background-image: url("../images/background.jpg");
+    object-fit: scale-down;
+    border-style: solid;
+    border-width: thick;
+    background-size: cover;
+    margin: 10px;
+  }
+
+#project2 {
+    display: flex;
+    flex-direction: row;
+    background-image: url("../images/keyboard.jpg");
+    object-fit: scale-down;
+    border-style: solid;
+    border-width: thick;
+    background-size: cover;
+    margin: 10px;
+    
+}
+
+
+/* footer elements */
+
+footer {
+  padding: 10px 400px 20px;
+  text-align: center;
+  justify-content: space-between;
+  background: #13293d;
+  color: #fff;
+}
+
+h3 {
+    font-size: 20px;
+    }
+
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  min-width: 200px;
+}
+
+footer ul li {
+    text-decoration: none;
+}
+
+footer a {
+    color: #fff;
+}
