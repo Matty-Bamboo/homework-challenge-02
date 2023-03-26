@@ -3,16 +3,8 @@
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   }
 
-/* Element Selectors select all of that element type */
-body {
-  background-color: white;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: flex-start;
-}
 
+    
 /* Header Elements */
 header {
     display: flex;
@@ -25,6 +17,7 @@ header {
 
 h1 {
     font-size: 50px;
+    
 }
 
 /* Navigation Elements */
@@ -51,9 +44,20 @@ nav ul li a:hover {
 
 /* main body section */
 
-section {
-  flex: 1;
-  padding: 20px;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-left: 2%;
 }
 
 .float-left {
@@ -61,46 +65,25 @@ section {
     margin-right: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-    font-size: 20px;
-}
-
-img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
-}
-
-
 .card {
-    flex: 1 0 200px;
+    flex: 1 0 0;
     padding: 10px;
-    text-align: justify 
-    border-style: hidden;
+    text-align: center 
+    border-style: solid;
     border-width: 1px;
 }
 
-.card-project {
-    border-style: none;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    flex: 0 0 400px;
-    font-size: 10px;
+.card h2 {
+    padding: 20px;
+    background:  #13293d;
+    color: #b9c6ae;
 }
 
-.card-project header {
-    text-align: left;
-}
-
-.card-project img {
+.card img {
     width: 100%;
+    min-width: 400px;
 }
-
+/* testing code for image embedded in css
 #project1 {
     display: flex;
     flex-direction: row;
@@ -123,7 +106,7 @@ img {
     margin: 10px;
     
 }
-
+*/
 
 /* footer elements */
 
