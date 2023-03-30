@@ -1,16 +1,22 @@
 /*Universal Selector */
 * {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  }
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
 
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
 
     
 /* Header Elements */
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1%;
+    padding: 3%;
     background: #13293d;
     color: #b9c6ae
 }
@@ -18,7 +24,35 @@ header {
 h1 {
     font-size: 50px;
     font-style: italic;
-    
+}
+
+/* Navigation Elements */
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    min-width: 360px;
+}
+
+nav ul li a {
+    font-size: 25px;
+    color: #b9c6ae;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: whitesmoke
+}
+
+/* main body elements */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-left: 2%;
 }
 
 h2 {
@@ -34,47 +68,7 @@ p {
     text-align: justify
 }
 
-/* Navigation Elements */
-nav {
-    display: flex;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    min-width: 300px; 
-}
-
-nav ul li a {
-    color: #b9c6ae;
-    font-weight: bold;
-    text-decoration: none;   
-}
-
-nav ul li a:hover {
-    color: whitesmoke
-}
-
-/* main body section */
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}
-
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2%;
-    margin-left: 2%;
-}
-
-
+/* class selectors main body */
 
 .float-left {
     float: left;
@@ -100,10 +94,6 @@ main {
     max-height: 300px;
 }
 
-#work {
-    width: 100%;
-}
-
 .workflex {
     display: flex;
     flex-wrap: wrap;
@@ -114,59 +104,56 @@ main {
     transform: scale(1.02);
 }
 
+/* id selectors main body */
+
+#work {
+    width: 100%;
+}
+
 #resume1:hover {
     transform: scale(1.02)
 }
-/* testing code for image embedded in css
-#project1 {
-    display: flex;
-    flex-direction: row;
-    background-image: url("../images/background.jpg");
-    object-fit: scale-down;
-    border-style: solid;
-    border-width: thick;
-    background-size: cover;
-    margin: 10px;
-  }
-
-#project2 {
-    display: flex;
-    flex-direction: row;
-    background-image: url("../images/keyboard.jpg");
-    object-fit: scale-down;
-    border-style: solid;
-    border-width: thick;
-    background-size: cover;
-    margin: 10px;
-    
-}
-*/
 
 /* footer elements */
 
 footer {
-  padding: 10px 400px 20px;
-  text-align: center;
-  justify-content: space-between;
+  position: bottom;
+  bottom: 0;
+  left: 0;
   background: #13293d;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  padding-bottom: 20px;
   color: #fff;
-}
-
-h4 {
-    font-size: 20px;
-    }
-
-footer ul {
-  display: flex;
-  justify-content: space-evenly;
-  list-style-type: none;
-  min-width: 200px;
 }
 
 footer ul li {
     text-decoration: none;
+    list-style-type: none;
 }
 
 footer a {
     color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+ .footer-content h4 {
+    font-size: 40px;
+    font-weight: bold;
+ }
+
+/* cards are stacked on top of each other at 768px or smaller */
+
+@media screen and (max-width: 768px {
+    .card  {
+        width: 100%;
+    }
+    
 }
